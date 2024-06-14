@@ -1,0 +1,32 @@
+<template>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-label="Example table of Opportunities with a single column">
+        <thead>
+        <tr class="slds-line-height_reset">
+        <th class="" scope="col">
+        <div class="slds-truncate" title="Acount Name">Account Name</div>
+        </th>
+        <th class="" scope="col">
+            <div class="slds-truncate" title="No. Of Emp">Number of Employees</div>
+            </th>
+        </tr>
+
+        </thead>
+        <tbody>
+        <template for:each={lwcacclist.data} for:item ="acc">
+        <tr key={acc.Id} class="slds-hint-parent">
+        <td data-label="Acount Name">
+            <div class="slds-truncate" title="Cloudhub">
+            <p>{acc.Name}</p>
+            </div>
+        </td>
+        <td data-label="No. Of Emp">
+            <div class="slds-truncate" title="Cloudhub">
+            <p>{acc.NumberOfEmployees}</p>
+            </div>
+       </td>
+        </tr>
+        </template>
+        </tbody>
+        </table>
+    
+</template>

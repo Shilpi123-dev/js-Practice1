@@ -1,0 +1,19 @@
+<template>
+    
+    <div class="slds-grid slds-wrap slds-tabs_card">
+        <template if:true={showspinner}>
+          
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+          
+        </template>
+
+        <div class="slds-col slds-size_6-of-12 slds-p-right_xx-small">
+            <lightning-input type="text" label="Math Marks" required></lightning-input>        
+          </div>
+
+          <div class="slds-col slds-size_6-of-12 slds-p-right_xx-small">
+            <lightning-input type="text" label="Science Marks" required></lightning-input>    
+          </div>
+
+    </div>
+</template>

@@ -1,0 +1,17 @@
+<template>
+  
+   <div class="slds-grid slds-wrap slds-tabs_card">
+    <div class="slds-col slds-size_6-of-12 slds-p-right_xx-small">
+        <lightning-input data-id="math" type="text" label="Math Marks" required></lightning-input>        
+      </div>
+
+      <div class="slds-col slds-size_6-of-12 slds-p-right_xx-small">
+        <lightning-input data-id="science" type="text" label="Science Marks" required></lightning-input>    
+      </div>
+      <div class="slds-col slds-size_12-of-12 slds-align_absolute-center">
+      <button class="slds-button slds-button_brand"  onclick={calculate}>Submit</button>
+     </div>
+     <c-child-Component total-sum={totalmarks}></c-child-Component>
+</div>
+
+</template>
